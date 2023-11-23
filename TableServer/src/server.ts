@@ -74,8 +74,8 @@ export async function createServer(opts: ServerOptions) {
 
     opts.host ??= process.env.HOST ?? 'localhost';
     opts.port ??= Number(process.env.PORT ?? 8081);
-    opts.gameServer ??= process.env.GAME_SERVER ?? 'http://localhost:3000/';
-    opts.avatarServer ??= process.env.AVATAR_SERVER ?? 'http://localhost:3000/';
+    opts.gameServer ??= process.env.GAME_SERVER ?? 'http://localhost:3002/';
+    opts.avatarServer ??= process.env.AVATAR_SERVER ?? 'http://localhost:3002/';
     opts.bigBlind ??= opts.smallBlind * 2;
     opts.minBuyIn ??= opts.bigBlind * 20;
     opts.mode ??= 'cash';

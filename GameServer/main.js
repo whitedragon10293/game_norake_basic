@@ -4,7 +4,7 @@ require('dotenv').config({
     path: path.resolve(__dirname, '.env')
 })
 
-const port = Number(process.env.PORT || 3000)
+const port = Number(process.env.PORT || 3002)
 
 const http = require('http')
 const app = require('./app')
